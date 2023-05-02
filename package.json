@@ -1,0 +1,18 @@
+{
+  "name": "auth-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "auth-server-dev": "cd wbs-cs-auth-server-test && npm run dev",
+    "resource-server-dev": "cd wbs-cs-resource-server-test && npm run dev",
+    "spa-dev": "cd wbs-cs-spa-test && npm run dev",
+    "dev": "concurrently \"npm run auth-server-dev\" \"npm run resource-server-dev\" \"npm run spa-dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
